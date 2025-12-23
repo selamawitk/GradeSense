@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(to top left, #0a151a, #203a43, #2c5364); /* Teal to dark blue */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white !important; /* Force white text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card styling */
+.card {
+  background: linear-gradient(135deg, #081c25, #1c394a); /* slightly darker than page bg */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(12, 37, 54, 0.7);
+}
+
+/* Inputs styling */
+input.form-control {
+  color: white;
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder text */
+input.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Input focus */
+input.form-control:focus {
+  color: white;
+  background-color: transparent;
+  border-color: #7fdbff;
+  box-shadow: 0 0 8px #7fdbff;
+  outline: none;
+}
+
+/* Input group text (icon background) */
+.input-group-text {
+  background-color: transparent !important; /* transparent bg */
+  color: white !important;                  /* white icon */
+  border: none !important;                   /* no border */
+  border-radius: 6px 0 0 6px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/* Override Bootstrap's muted text color */
+.text-muted {
+  color: white !important;
+}
+
+/* Ensure all nav-links in navbar-dark are white */
+.navbar-dark .nav-link {
+  color: white !important;
+}
+
+/* Optional: lighten nav links on hover */
+.navbar-dark .nav-link:hover {
+  color: #ddd !important;
+}
+.sidebar-link {
+  color: white !important;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* soft light hover */
+  color: white !important;
+  text-decoration: none;
+}
+
+.dashboard-link {
+  color: white;
+  text-decoration: none;
+}
+
+.dashboard-link:hover {
+  text-decoration: underline;
+}
